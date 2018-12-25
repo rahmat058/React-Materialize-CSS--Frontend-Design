@@ -1,25 +1,24 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import 'materialize-css/dist/css/materialize.min.css'
+import './assets/css/main.css'
+
+import Navbar from './components/navbar'
+import Slider from './components/slider'
+import Search from './components/search'
+import IconBoxes from './components/icon-boxes'
+import PopularPlaces from './components/popular-places'
+import Follow from './components/follow'
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+      <div id='home' className='scrollspy'>
+        <Navbar />
+        <Slider />
+        <Search />
+        <IconBoxes />
+        <PopularPlaces />
+        <Follow />
       </div>
     );
   }
