@@ -8,6 +8,7 @@ import Search from './components/search'
 import IconBoxes from './components/icon-boxes'
 import PopularPlaces from './components/popular-places'
 import Follow from './components/follow'
+import Gallery from './components/gallery'
 
 class App extends Component {
   render() {
@@ -19,6 +20,7 @@ class App extends Component {
         <IconBoxes />
         <PopularPlaces />
         <Follow />
+        <Gallery />
       </div>
     );
   }
