@@ -9,6 +9,7 @@ import IconBoxes from './components/icon-boxes'
 import PopularPlaces from './components/popular-places'
 import Follow from './components/follow'
 import Gallery from './components/gallery'
+import Contact from './components/contact'
 
 class App extends Component {
   render() {
@@ -21,6 +22,7 @@ class App extends Component {
         <PopularPlaces />
         <Follow />
         <Gallery />
+        <Contact />
       </div>
     );
   }
